@@ -44,7 +44,7 @@ export default function TransferForm({
         method: "POST",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("@App:token")}`,
-          "Content-Type": "application/json",
+          "Content-Type": "application/json",  "Accept": "application/json",
         },
         body: JSON.stringify({
           account: data.accountNumber,

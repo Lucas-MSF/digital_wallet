@@ -27,6 +27,7 @@ export default function Dashboard() {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("@App:token")}`,
             "Content-Type": "application/json",
+            "Accept": "application/json",
           },
         });
         if (!response.ok) {

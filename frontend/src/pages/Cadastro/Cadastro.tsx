@@ -55,7 +55,7 @@ export default function Cadastro() {
       // Cadastro
       const res = await fetch("http://backend/api/signup", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json",  "Accept": "application/json", },
         body: JSON.stringify({
           name: data.name,
           email: data.email,

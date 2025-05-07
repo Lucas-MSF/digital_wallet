@@ -54,6 +54,7 @@ export default function UserMenu() {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("@App:token")}`,
           "Content-Type": "application/json",
+          "Accept": "application/json",
         },
         body: JSON.stringify({
           name: data.name,

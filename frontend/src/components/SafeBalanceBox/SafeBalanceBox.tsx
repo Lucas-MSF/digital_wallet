@@ -44,6 +44,7 @@ export default function CofrinhoBox({
           headers: {
             Authorization: `Bearer ${localStorage.getItem("@App:token")}`,
             "Content-Type": "application/json",
+            "Accept": "application/json",
           },
         });
         if (!response.ok) {
@@ -72,6 +73,7 @@ export default function CofrinhoBox({
         headers: {
           Authorization: `Bearer ${localStorage.getItem("@App:token")}`,
           "Content-Type": "application/json",
+          "Accept": "application/json",
         },
         body: JSON.stringify({ amount, description }),
       });
@@ -95,6 +97,7 @@ export default function CofrinhoBox({
         headers: {
           Authorization: `Bearer ${localStorage.getItem("@App:token")}`,
           "Content-Type": "application/json",
+          "Accept": "application/json",
         },
         body: JSON.stringify({ amount, description }),
       });

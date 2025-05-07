@@ -66,7 +66,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       setIsLoading(true);
       const response = await fetch("http://backend/api/login", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json",  "Accept": "application/json", },
         body: JSON.stringify({ cpf, password }),
       });
       if (!response.ok) {
